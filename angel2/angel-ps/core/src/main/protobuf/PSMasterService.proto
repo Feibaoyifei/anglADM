@@ -1,0 +1,159 @@
+/*
+ * Tencent is pleased to support the open source community by making Angel available.
+ *
+ * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+ *
+ * Licensed under the BSD 3-Clause License (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ *
+ * https://opensource.org/licenses/BSD-3-Clause
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is
+ * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+option java_package = "com.tencent.angel.protobuf.generated";
+
+option java_outer_classname = "PSMasterServiceProtos";
+
+option java_generate_equals_and_hash = true;
+
+option java_generic_services = true;
+
+option optimize_for = SPEED;
+
+import "ML.proto";
+
+
+message PSReportRequest {
+  required PSAttemptIdProto psAttemptId = 1;
+  repeated MatrixReportProto matrixReports = 2;
+  required PSFailedReportsProto psFailedReports = 3;
+  optional string diagnostics = 4;
+  repeated Pair metrics = 5;
+}
+
+message MatrixReportProto{
+  required int32 matrixId = 1;
+  required string matrixName = 2;
+  repeated PartReportProto partReports = 4;
+}
+
+message PartReportProto {
+  required int32 partId = 1;
+  required int32 status = 2;
+}
+
+enum PSCommandProto {
+  PSCOMMAND_OK = 1;
+  PSCOMMAND_RESYNC = 2;
+  PSCOMMAND_SHUTDOWN = 3;
+  PSCOMMAND_REGISTER = 4;
+  PSCOMMAND_COMMIT = 5;
+  PSCOMMAND_INVALID = 6;
+}
+
+message PSReportResponse {
+  required PSCommandProto psCommand = 1 [default = PSCOMMAND_OK];
+  repeated MatrixMetaProto needCreateMatrices = 2;
+  repeated int32 needReleaseMatrixIds = 3;
+  repeated NeedSaveMatrixProto needSaveMatrices = 4;
+  repeated RecoverPartKeyProto needRecoverParts = 5;
+  optional ExecuteUnitDesc executeUnitDesc = 6;
+}
+
+message NeedSaveMatrixProto {
+  required int32 matrixId = 1;
+  repeated int32 partIds = 2;
+}
+
+message RecoverPartKeyProto {
+  required int32 matrixId = 1;
+  required int32 partId = 2;
+  required PSIdProto psId = 3;
+  required LocationProto loc = 4;
+}
+
+message ExecuteUnitDesc{
+  required int32 totalWorkerGroupNum = 1;
+  required int32 activeWorkerGroupNum = 2;
+  required int32 totalWorkerNum = 3;
+  required int32 activeWorkerNum = 4;
+  required int32 totalTaskNum = 5;
+  required int32 activeTaskNum = 6;
+}
+
+message PSRegisterRequest {
+  required PSAttemptIdProto psAttemptId = 1;
+  required LocationProto location = 2;
+}
+
+message PSRegisterResponse {
+  required PSCommandProto psCommand = 1;
+}
+
+message PSDoneRequest{
+  required PSAttemptIdProto psAttemptId = 1;
+}
+
+message PSDoneResponse{
+}
+
+message PSErrorRequest {
+  required PSAttemptIdProto psAttemptId = 1;
+  required string msg = 2;
+}
+
+message PSErrorResponse {
+}
+
+message GetExecuteUnitDescRequest{
+
+}
+
+message GetExecuteUnitDescResponse{
+  required ExecuteUnitDesc executeUnitDesc = 1;
+}
+
+message GetTaskMatrixClockRequest {
+}
+
+message TaskMatrixClock {
+  required TaskIdProto taskId = 1;
+  repeated MatrixClock matrixClocks = 2;
+}
+
+message GetTaskMatrixClockResponse {
+  repeated TaskMatrixClock taskMatrixClocks = 1;
+}
+
+message GetIterationRequest {
+}
+
+message GetIterationResponse {
+  required int32 iteration = 1;
+}
+
+message GetPSMatricesMetaRequest {
+  required PSIdProto psId = 1;
+}
+
+message GetPSMatricesResponse {
+  repeated MatrixMetaProto matricesMeta = 1;
+}
+
+service PSMasterService {
+  rpc psRegister(PSRegisterRequest) returns (PSRegisterResponse);
+  rpc psReport(PSReportRequest) returns (PSReportResponse);
+  rpc psDone(PSDoneRequest) returns (PSDoneResponse);
+  rpc psError(PSErrorRequest) returns (PSErrorResponse);
+  rpc getExecuteUnitDesc(GetExecuteUnitDescRequest) returns (GetExecuteUnitDescResponse);
+  rpc getTaskMatrixClocks(GetTaskMatrixClockRequest) returns (GetTaskMatrixClockResponse);
+  rpc getAllPSLocation(GetAllPSLocationRequest) returns (GetAllPSLocationResponse);
+  rpc getPSLocation(GetPSLocationRequest) returns (GetPSLocationReponse);
+  rpc getPartLocation(GetPartLocationRequest) returns (GetPartLocationResponse);
+  rpc getIteration(GetIterationRequest) returns (GetIterationResponse);
+  rpc getPSMatricesMeta(GetPSMatricesMetaRequest) returns (GetPSMatricesResponse);
+}

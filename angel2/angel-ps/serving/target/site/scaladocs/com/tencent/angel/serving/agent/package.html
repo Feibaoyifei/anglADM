@@ -1,0 +1,155 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>agent - angel-ps-serving 1.4.0 API - com.tencent.angel.serving.agent</title>
+          <meta name="description" content="agent - angel - ps - serving 1.4.0 API - com.tencent.angel.serving.agent" />
+          <meta name="keywords" content="agent angel ps serving 1.4.0 API com.tencent.angel.serving.agent" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.tencent.angel.serving.agent.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.tencent">tencent</a>.<a href="../../package.html" class="extype" name="com.tencent.angel">angel</a>.<a href="../package.html" class="extype" name="com.tencent.angel.serving">serving</a></p>
+        <h1>agent</h1><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.agent.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">agent</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.tencent.angel.serving.agent.AgentService" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AgentServiceextendsAnyRef"></a>
+      <a id="AgentService:AgentService"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AgentService.html"><span class="name">AgentService</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.agent.package@AgentServiceextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Serving service is a plugin-service on agent(such as parameter service)
+</p>
+    </li><li name="com.tencent.angel.serving.agent.AgentServiceImpl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AgentServiceImplextendsAgentService"></a>
+      <a id="AgentServiceImpl:AgentServiceImpl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AgentServiceImpl.html"><span class="name">AgentServiceImpl</span></a><span class="result"> extends <a href="AgentService.html" class="extype" name="com.tencent.angel.serving.agent.AgentService">AgentService</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.agent.package@AgentServiceImplextendsAgentService" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the implement of AgentService,offer predict function by netty transfer and communicate with ServingService by rpc
+</p>
+    </li><li name="com.tencent.angel.serving.agent.ServingAgentManager" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServingAgentManagerextendsAnyRef"></a>
+      <a id="ServingAgentManager:ServingAgentManager"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingAgentManager.html"><span class="name">ServingAgentManager</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.agent.package@ServingAgentManagerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the serving agent manager, manage the sharding model for serving service
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

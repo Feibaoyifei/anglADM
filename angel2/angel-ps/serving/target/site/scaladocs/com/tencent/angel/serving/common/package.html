@@ -1,0 +1,422 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>common - angel-ps-serving 1.4.0 API - com.tencent.angel.serving.common</title>
+          <meta name="description" content="common - angel - ps - serving 1.4.0 API - com.tencent.angel.serving.common" />
+          <meta name="keywords" content="common angel ps serving 1.4.0 API com.tencent.angel.serving.common" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.tencent.angel.serving.common.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.tencent">tencent</a>.<a href="../../package.html" class="extype" name="com.tencent.angel">angel</a>.<a href="../package.html" class="extype" name="com.tencent.angel.serving">serving</a></p>
+        <h1>common</h1><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">common</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.tencent.angel.serving.common.MatrixMeta" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MatrixMetaextendsProductwithSerializable"></a>
+      <a id="MatrixMeta:MatrixMeta"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MatrixMeta.html"><span class="name">MatrixMeta</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rowType">rowType: <span class="extype" name="com.tencent.angel.ml.matrix.RowType">RowType</span></span>, <span name="rowNum">rowNum: <span class="extype" name="scala.Int">Int</span></span>, <span name="dimension">dimension: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@MatrixMetaextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the matrix meta</p><div class="fullcomment"><div class="comment cmt"><p>the matrix meta</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the matrix name</p></dd><dt class="param">rowType</dt><dd class="cmt"><p>the matrix type</p></dd><dt class="param">rowNum</dt><dd class="cmt"><p>the row num</p></dd><dt class="param">dimension</dt><dd class="cmt"><p>the dimension</p></dd></dl></div>
+    </li><li name="com.tencent.angel.serving.common.MatrixSplit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MatrixSplitextendsProductwithSerializable"></a>
+      <a id="MatrixSplit:MatrixSplit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MatrixSplit.html"><span class="name">MatrixSplit</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="idx">idx: <span class="extype" name="scala.Int">Int</span></span>, <span name="rowOffset">rowOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="rowNum">rowNum: <span class="extype" name="scala.Int">Int</span></span>, <span name="columnOffset">columnOffset: <span class="extype" name="scala.Long">Long</span></span>, <span name="dimension">dimension: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@MatrixSplitextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the matrix split represent a uniform calculate unit for serving
+</p><div class="fullcomment"><div class="comment cmt"><p>the matrix split represent a uniform calculate unit for serving
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the matrix name</p></dd><dt class="param">idx</dt><dd class="cmt"><p>the index of split</p></dd><dt class="param">rowOffset</dt><dd class="cmt"><p>the row offset</p></dd><dt class="param">rowNum</dt><dd class="cmt"><p>the row num</p></dd><dt class="param">columnOffset</dt><dd class="cmt"><p>the column offset</p></dd><dt class="param">dimension</dt><dd class="cmt"><p>the dimension</p></dd></dl></div>
+    </li><li name="com.tencent.angel.serving.common.ModelCommand" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelCommandextendsAnyRef"></a>
+      <a id="ModelCommand:ModelCommand"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelCommand.html"><span class="name">ModelCommand</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelCommandextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="com.tencent.angel.serving.common.ModelDefinition" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelDefinitionextendsAnyRef"></a>
+      <a id="ModelDefinition:ModelDefinition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelDefinition.html"><span class="name">ModelDefinition</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelDefinitionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the model definition
+</p>
+    </li><li name="com.tencent.angel.serving.common.ModelLocation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ModelLocationextendsProductwithSerializable"></a>
+      <a id="ModelLocation:ModelLocation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelLocation.html"><span class="name">ModelLocation</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="splitLocations">splitLocations: <span class="extype" name="scala.Array">Array</span>[<a href="ModelSplitLocation.html" class="extype" name="com.tencent.angel.serving.common.ModelSplitLocation">ModelSplitLocation</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelLocationextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the model location
+</p><div class="fullcomment"><div class="comment cmt"><p>the model location
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the model name</p></dd><dt class="param">splitLocations</dt><dd class="cmt"><p>the split locations</p></dd></dl></div>
+    </li><li name="com.tencent.angel.serving.common.ModelLocationList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ModelLocationListextendsProductwithSerializable"></a>
+      <a id="ModelLocationList:ModelLocationList"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelLocationList.html"><span class="name">ModelLocationList</span></a><span class="params">(<span name="modelLocations">modelLocations: <span class="extype" name="scala.Array">Array</span>[<a href="ModelLocation.html" class="extype" name="com.tencent.angel.serving.common.ModelLocation">ModelLocation</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelLocationListextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the model location list
+</p><div class="fullcomment"><div class="comment cmt"><p>the model location list
+</p></div><dl class="paramcmts block"><dt class="param">modelLocations</dt><dd class="cmt"><p>the model locations</p></dd></dl></div>
+    </li><li name="com.tencent.angel.serving.common.ModelMeta" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ModelMetaextendsProductwithSerializable"></a>
+      <a id="ModelMeta:ModelMeta"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelMeta.html"><span class="name">ModelMeta</span></a><span class="params">(<span name="matricesMeta">matricesMeta: <span class="extype" name="scala.Array">Array</span>[<a href="MatrixMeta.html" class="extype" name="com.tencent.angel.serving.common.MatrixMeta">MatrixMeta</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelMetaextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the model meta</p><div class="fullcomment"><div class="comment cmt"><p>the model meta</p></div><dl class="paramcmts block"><dt class="param">matricesMeta</dt><dd class="cmt"><p>the matrix meta of model</p></dd></dl></div>
+    </li><li name="com.tencent.angel.serving.common.ModelReport" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelReportextendsAnyRef"></a>
+      <a id="ModelReport:ModelReport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelReport.html"><span class="name">ModelReport</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelReportextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> the model report</p>
+    </li><li name="com.tencent.angel.serving.common.ModelSplit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelSplitextendsAnyRef"></a>
+      <a id="ModelSplit:ModelSplit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelSplit.html"><span class="name">ModelSplit</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelSplitextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the model split
+</p>
+    </li><li name="com.tencent.angel.serving.common.ModelSplitGroup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelSplitGroupextendsAnyRef"></a>
+      <a id="ModelSplitGroup:ModelSplitGroup"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelSplitGroup.html"><span class="name">ModelSplitGroup</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelSplitGroupextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the model split group</p>
+    </li><li name="com.tencent.angel.serving.common.ModelSplitID" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ModelSplitIDextendsEncodablewithProductwithSerializable"></a>
+      <a id="ModelSplitID:ModelSplitID"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelSplitID.html"><span class="name">ModelSplitID</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="index">index: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="../../transport/Encodable.html" class="extype" name="com.tencent.angel.transport.Encodable">Encodable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelSplitIDextendsEncodablewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">model split ID</p><div class="fullcomment"><div class="comment cmt"><p>model split ID</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the model name</p></dd><dt class="param">index</dt><dd class="cmt"><p>the model index</p></dd></dl></div>
+    </li><li name="com.tencent.angel.serving.common.ModelSplitLocation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ModelSplitLocationextendsProductwithSerializable"></a>
+      <a id="ModelSplitLocation:ModelSplitLocation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelSplitLocation.html"><span class="name">ModelSplitLocation</span></a><span class="params">(<span name="idx">idx: <span class="extype" name="scala.Int">Int</span></span>, <span name="locs">locs: <span class="extype" name="scala.Array">Array</span>[<a href="../ServingLocation.html" class="extype" name="com.tencent.angel.serving.ServingLocation">ServingLocation</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelSplitLocationextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the model split location
+</p><div class="fullcomment"><div class="comment cmt"><p>the model split location
+</p></div><dl class="paramcmts block"><dt class="param">idx</dt><dd class="cmt"><p>the model split index</p></dd><dt class="param">locs</dt><dd class="cmt"><p>the model split locations</p></dd></dl></div>
+    </li><li name="com.tencent.angel.serving.common.PredictSplitData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PredictSplitData[V&lt;:com.tencent.angel.ml.math.TVector]extendsAnyRef"></a>
+      <a id="PredictSplitData[V&lt;:TVector]:PredictSplitData[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PredictSplitData.html"><span class="name">PredictSplitData</span></a><span class="tparams">[<span name="V">V &lt;: <span class="extype" name="com.tencent.angel.ml.math.TVector">TVector</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@PredictSplitData[V&lt;:com.tencent.angel.ml.math.TVector]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the predict split data</p>
+    </li><li name="com.tencent.angel.serving.common.PredictSplitDataList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PredictSplitDataList[V&lt;:com.tencent.angel.ml.math.TVector]extendsAnyRef"></a>
+      <a id="PredictSplitDataList[V&lt;:TVector]:PredictSplitDataList[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PredictSplitDataList.html"><span class="name">PredictSplitDataList</span></a><span class="tparams">[<span name="V">V &lt;: <span class="extype" name="com.tencent.angel.ml.math.TVector">TVector</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@PredictSplitDataList[V&lt;:com.tencent.angel.ml.math.TVector]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the predict split data list</p>
+    </li><li name="com.tencent.angel.serving.common.ReplicaModelSplit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReplicaModelSplitextendsModelSplit"></a>
+      <a id="ReplicaModelSplit:ReplicaModelSplit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ReplicaModelSplit.html"><span class="name">ReplicaModelSplit</span></a><span class="result"> extends <a href="ModelSplit.html" class="extype" name="com.tencent.angel.serving.common.ModelSplit">ModelSplit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ReplicaModelSplitextendsModelSplit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the model split which has serving locations
+</p>
+    </li><li name="com.tencent.angel.serving.common.ServingReplica" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServingReplicaextendsAnyRef"></a>
+      <a id="ServingReplica:ServingReplica"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingReplica.html"><span class="name">ServingReplica</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ServingReplicaextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the serving replica
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.tencent.angel.serving.common.ModelSplitID" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelSplitID"></a>
+      <a id="ModelSplitID:ModelSplitID"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelSplitID$.html"><span class="name">ModelSplitID</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ModelSplitID" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.common.ReplicaModelSplit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReplicaModelSplit"></a>
+      <a id="ReplicaModelSplit:ReplicaModelSplit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ReplicaModelSplit$.html"><span class="name">ReplicaModelSplit</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.tencent.angel.serving.common.package@ReplicaModelSplit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+source ./spark-on-angel-env.sh
+
+$SPARK_HOME/bin/spark-submit \
+    --master yarn \
+    --deploy-mode cluster \
+    --jars $SONA_SPARK_JARS \
+    --conf spark.ps.jars=$SONA_ANGEL_JARS \
+    --conf spark.ps.instances=1 \
+    --conf spark.ps.cores=2 \
+    --conf spark.ps.memory=6g \
+    --queue default \
+    --driver-memory 6g \
+    --num-executors 10 \
+    --executor-cores 2 \
+    --executor-memory 2g \
+    --class com.tencent.angel.spark.ml.classification.SparseLRWithADMM \
+    hdfs://node0:9820/user/lzz/angel-1.4.0-bin/lib/spark-on-angel-mllib-${ANGEL_VERSION}.jar
+
+

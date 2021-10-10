@@ -1,0 +1,50 @@
+products:
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> angel-ps/serving/target/test-classes/com/tencent/angel/transport/NetworkSuite$$anonfun$1$$anon$1.class
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> angel-ps/serving/target/test-classes/com/tencent/angel/transport/NetworkSuite$$anonfun$1$$anon$2.class
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> angel-ps/serving/target/test-classes/com/tencent/angel/transport/NetworkSuite$$anonfun$1$$anon$3.class
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> angel-ps/serving/target/test-classes/com/tencent/angel/transport/NetworkSuite$$anonfun$1.class
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> angel-ps/serving/target/test-classes/com/tencent/angel/transport/NetworkSuite.class
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> angel-ps/serving/target/test-classes/com/tencent/angel/transport/ServingSuite$$anonfun$1.class
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> angel-ps/serving/target/test-classes/com/tencent/angel/transport/ServingSuite.class
+binary dependencies:
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> angel-ps/core/target/angel-ps-core-1.4.0.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> /home/cluster/.m2/repository/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> /home/cluster/.m2/repository/org/apache/hadoop/hadoop-common/2.7.3/hadoop-common-2.7.3.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> /home/cluster/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> /home/cluster/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> /home/cluster/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> angel-ps/core/target/angel-ps-core-1.4.0.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> /home/cluster/.m2/repository/org/apache/hadoop/hadoop-common/2.7.3/hadoop-common-2.7.3.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> /home/cluster/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.3/hadoop-mapreduce-client-core-2.7.3.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> /home/cluster/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> /home/cluster/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> /home/cluster/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+source dependencies:
+external dependencies:
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.BusinessMessageHandler
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.Decoder
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.FutureResponseCallback
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.FutureResponseCallback$
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.MessageType$
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.NetworkClient
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.NetworkContext
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.NetworkServer
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.RequestMessage
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.ResponseCallback
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.serving.PredictData
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.serving.Util$
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.serving.client.DistributedModel
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.serving.client.ModelCoordinator
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.serving.client.ServingClient
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.serving.client.ServingClient$
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.serving.ml.LRServingModel
+class names:
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.NetworkSuite
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.NetworkSuite$$anonfun$1
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.NetworkSuite$$anonfun$1$$anon$1
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.NetworkSuite$$anonfun$1$$anon$2
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/NetworkSuite.scala -> com.tencent.angel.transport.NetworkSuite$$anonfun$1$$anon$3
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.transport.ServingSuite
+   angel-ps/serving/src/test/scala/com/tencent/angel/transport/ServingSuite.scala -> com.tencent.angel.transport.ServingSuite$$anonfun$1

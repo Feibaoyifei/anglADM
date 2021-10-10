@@ -1,0 +1,418 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>serving - angel-ps-serving 1.4.0 API - com.tencent.angel.serving.transport.serving</title>
+          <meta name="description" content="serving - angel - ps - serving 1.4.0 API - com.tencent.angel.serving.transport.serving" />
+          <meta name="keywords" content="serving angel ps serving 1.4.0 API com.tencent.angel.serving.transport.serving" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../index.html';
+            var hash = 'com.tencent.angel.serving.transport.serving.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.tencent">tencent</a>.<a href="../../../package.html" class="extype" name="com.tencent.angel">angel</a>.<a href="../../package.html" class="extype" name="com.tencent.angel.serving">serving</a>.<a href="../package.html" class="extype" name="com.tencent.angel.serving.transport">transport</a></p>
+        <h1>serving</h1><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serving</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.tencent.angel.serving.transport.serving.BatchPredictReqMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BatchPredictReqMsg[V&lt;:com.tencent.angel.ml.math.TVector]extendsServingSplitReqMsg[com.tencent.angel.serving.ChunkedShardingDataList[V]]"></a>
+      <a id="BatchPredictReqMsg[V&lt;:TVector]:BatchPredictReqMsg[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BatchPredictReqMsg.html"><span class="name">BatchPredictReqMsg</span></a><span class="tparams">[<span name="V">V &lt;: <span class="extype" name="com.tencent.angel.ml.math.TVector">TVector</span></span>]</span><span class="result"> extends <a href="ServingSplitReqMsg.html" class="extype" name="com.tencent.angel.serving.transport.serving.ServingSplitReqMsg">ServingSplitReqMsg</a>[<a href="../../ChunkedShardingDataList.html" class="extype" name="com.tencent.angel.serving.ChunkedShardingDataList">ChunkedShardingDataList</a>[<span class="extype" name="com.tencent.angel.serving.transport.serving.BatchPredictReqMsg.V">V</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@BatchPredictReqMsg[V&lt;:com.tencent.angel.ml.math.TVector]extendsServingSplitReqMsg[com.tencent.angel.serving.ChunkedShardingDataList[V]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">batch predict request message
+</p>
+    </li><li name="com.tencent.angel.serving.transport.serving.BatchPredictResMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BatchPredictResMsgextendsServingSplitResMsg[Array[Double]]"></a>
+      <a id="BatchPredictResMsg:BatchPredictResMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BatchPredictResMsg.html"><span class="name">BatchPredictResMsg</span></a><span class="result"> extends <a href="ServingSplitResMsg.html" class="extype" name="com.tencent.angel.serving.transport.serving.ServingSplitResMsg">ServingSplitResMsg</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@BatchPredictResMsgextendsServingSplitResMsg[Array[Double]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the batch predict response message</p>
+    </li><li name="com.tencent.angel.serving.transport.serving.PredictReqMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PredictReqMsgextendsServingSplitReqMsg[com.tencent.angel.serving.ChunkedShardingData[_]]"></a>
+      <a id="PredictReqMsg:PredictReqMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PredictReqMsg.html"><span class="name">PredictReqMsg</span></a><span class="result"> extends <a href="ServingSplitReqMsg.html" class="extype" name="com.tencent.angel.serving.transport.serving.ServingSplitReqMsg">ServingSplitReqMsg</a>[<a href="../../ChunkedShardingData.html" class="extype" name="com.tencent.angel.serving.ChunkedShardingData">ChunkedShardingData</a>[_]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@PredictReqMsgextendsServingSplitReqMsg[com.tencent.angel.serving.ChunkedShardingData[_]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">single predict request message
+</p>
+    </li><li name="com.tencent.angel.serving.transport.serving.PredictResMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PredictResMsgextendsServingSplitResMsg[Double]"></a>
+      <a id="PredictResMsg:PredictResMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PredictResMsg.html"><span class="name">PredictResMsg</span></a><span class="result"> extends <a href="ServingSplitResMsg.html" class="extype" name="com.tencent.angel.serving.transport.serving.ServingSplitResMsg">ServingSplitResMsg</a>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@PredictResMsgextendsServingSplitResMsg[Double]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the single predict response message</p>
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingMessage" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ServingMessageextendsEncodable"></a>
+      <a id="ServingMessage:ServingMessage"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingMessage.html"><span class="name">ServingMessage</span></a><span class="result"> extends <a href="../../../transport/Encodable.html" class="extype" name="com.tencent.angel.transport.Encodable">Encodable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingMessageextendsEncodable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the trait of serving message, the message type and model split ID is header will encode and decode
+on transfer framework
+</p>
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingRequestMessageHandler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServingRequestMessageHandlerextendsBusinessMessageHandler"></a>
+      <a id="ServingRequestMessageHandler:ServingRequestMessageHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingRequestMessageHandler.html"><span class="name">ServingRequestMessageHandler</span></a><span class="result"> extends <a href="../../../transport/BusinessMessageHandler.html" class="extype" name="com.tencent.angel.transport.BusinessMessageHandler">BusinessMessageHandler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingRequestMessageHandlerextendsBusinessMessageHandler" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the implement of <span class="extype" name="BusinessMessageHandler">BusinessMessageHandler</span> for handling with request serving message
+</p>
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingSplitMessage" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ServingSplitMessage[T]extendsServingMessage"></a>
+      <a id="ServingSplitMessage[T]:ServingSplitMessage[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingSplitMessage.html"><span class="name">ServingSplitMessage</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="ServingMessage.html" class="extype" name="com.tencent.angel.serving.transport.serving.ServingMessage">ServingMessage</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingSplitMessage[T]extendsServingMessage" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingSplitReqMsg" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ServingSplitReqMsg[T]extendsServingSplitMessage[T]"></a>
+      <a id="ServingSplitReqMsg[T]:ServingSplitReqMsg[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingSplitReqMsg.html"><span class="name">ServingSplitReqMsg</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="ServingSplitMessage.html" class="extype" name="com.tencent.angel.serving.transport.serving.ServingSplitMessage">ServingSplitMessage</a>[<span class="extype" name="com.tencent.angel.serving.transport.serving.ServingSplitReqMsg.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingSplitReqMsg[T]extendsServingSplitMessage[T]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingSplitResMsg" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ServingSplitResMsg[T]extendsServingSplitMessage[T]"></a>
+      <a id="ServingSplitResMsg[T]:ServingSplitResMsg[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingSplitResMsg.html"><span class="name">ServingSplitResMsg</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="ServingSplitMessage.html" class="extype" name="com.tencent.angel.serving.transport.serving.ServingSplitMessage">ServingSplitMessage</a>[<span class="extype" name="com.tencent.angel.serving.transport.serving.ServingSplitResMsg.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingSplitResMsg[T]extendsServingSplitMessage[T]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingTransportClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServingTransportClientextendsAnyRef"></a>
+      <a id="ServingTransportClient:ServingTransportClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingTransportClient.html"><span class="name">ServingTransportClient</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingTransportClientextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the serving transport client
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.tencent.angel.serving.transport.serving.BatchPredictReqMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BatchPredictReqMsg"></a>
+      <a id="BatchPredictReqMsg:BatchPredictReqMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BatchPredictReqMsg$.html"><span class="name">BatchPredictReqMsg</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@BatchPredictReqMsg" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.transport.serving.BatchPredictResMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BatchPredictResMsg"></a>
+      <a id="BatchPredictResMsg:BatchPredictResMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BatchPredictResMsg$.html"><span class="name">BatchPredictResMsg</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@BatchPredictResMsg" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.transport.serving.PredictReqMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PredictReqMsg"></a>
+      <a id="PredictReqMsg:PredictReqMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PredictReqMsg$.html"><span class="name">PredictReqMsg</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@PredictReqMsg" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.transport.serving.PredictResMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PredictResMsg"></a>
+      <a id="PredictResMsg:PredictResMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PredictResMsg$.html"><span class="name">PredictResMsg</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@PredictResMsg" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingSplitMsgDecoder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServingSplitMsgDecoder"></a>
+      <a id="ServingSplitMsgDecoder:ServingSplitMsgDecoder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingSplitMsgDecoder$.html"><span class="name">ServingSplitMsgDecoder</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingSplitMsgDecoder" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the serving message decoder
+</p>
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingSplitMsgEncoder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServingSplitMsgEncoder"></a>
+      <a id="ServingSplitMsgEncoder:ServingSplitMsgEncoder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingSplitMsgEncoder$.html"><span class="name">ServingSplitMsgEncoder</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingSplitMsgEncoder" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the serving message encoder
+</p>
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingTransportClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServingTransportClient"></a>
+      <a id="ServingTransportClient:ServingTransportClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingTransportClient$.html"><span class="name">ServingTransportClient</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingTransportClient" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.tencent.angel.serving.transport.serving.ServingType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServingType"></a>
+      <a id="ServingType:ServingType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ServingType$.html"><span class="name">ServingType</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.tencent.angel.serving.transport.serving.package@ServingType" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
